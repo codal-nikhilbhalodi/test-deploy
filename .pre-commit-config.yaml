@@ -1,0 +1,19 @@
+repos:
+-   repo: https://github.com/ambv/black
+    rev: 24.3.0
+    hooks:
+    - id: black
+      language_version: python3
+-   repo: https://github.com/pycqa/flake8
+    rev: 7.0.0
+    hooks:
+    - id: flake8
+      exclude: ^(\w+/migrations/|pollme/settings.py|manage.py|\w+/apps.py)
+-   repo: local
+    hooks:
+    - id: pre-commit-django-migrations
+      name: Check django migrations
+      entry: python manage.py makemigrations --check
+      language: system
+      types: [python]
+      pass_filenames: false

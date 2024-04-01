@@ -1,2 +1,14 @@
 {
+    "python.analysis.typeCheckingMode": "basic",
+    "cSpell.words": [
+        "mappedfielddetail",
+        "presetdetail"
+    ],
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "python.formatting.provider": "none",
+    "turboConsoleLog.includeFileNameAndLineNum": true,
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "turboConsoleLog.logFunction": "print",
 }
