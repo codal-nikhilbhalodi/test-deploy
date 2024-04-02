@@ -15,7 +15,5 @@ source venv/bin/activate
 
 install requirements.txt
 pip install -r /home/ubuntu/Django-Poll-App/requirements.txt
-python3 manage.py makemigrations
-python3 manage.py migrate
 # run server
 screen -d -m python3 manage.py runserver 0:8000
